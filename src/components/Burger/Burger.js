@@ -4,12 +4,19 @@ import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 
 const burger = (props) => {
 
-  const transformedIngredients = Object.keys(props.ingredients)
+  let transformedIngredients = Object.keys(props.ingredients)
     .map(ingKey => {
       return [...Array(props.ingredients[ingKey])].map((_, i) => {
         return <BurgerIngredient key={ingKey + i} type={ingKey} />;
       });
-    }); // it gives us an array of keys. We use Array() to get ingredients which quantity more than 1
+    })
+    .reduce((arr, el) => {
+      return arr.concat(el);
+    }, []); // it gives us an array of keys. We use Array() to get ingredients which quantity more than 1
+
+  if (transformedIngredients.length === 0) {
+    transformedIngredients = <p>Please add ingredients!</p>;
+  }
 
   return (
     <div className={classes.Burger}>
