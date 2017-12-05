@@ -12,7 +12,7 @@ const burger = (props) => {
     })
     .reduce((arr, el) => {
       return arr.concat(el);
-    }, []); // it gives us an array of keys. We use Array() to get ingredients which quantity more than 1
+    }, []);
 
   if (transformedIngredients.length === 0) {
     transformedIngredients = <p>Please add ingredients!</p>;
