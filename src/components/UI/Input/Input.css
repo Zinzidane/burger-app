@@ -29,11 +29,10 @@
 .InputEl:focus {
   background-color: #000;
   color: #fff;
-  border: 2px solid #ffd670;
   transition: all .3s ease;
 }
 
 .Invalid {
-  border: 1px solid red;
+  border: 2px solid red;
   background-color: salmon;
 }
