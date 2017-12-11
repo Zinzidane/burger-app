@@ -8,10 +8,6 @@ class Modal extends Component {
     return nextProps.show !== this.props.show || nextProps.children !== this.props.children; // last check for spinner which nested in modal
   }
 
-  componentWillUpdate() {
-    console.log('[Modal] will update');
-  }
-
   render() {
     return (
       <Aux>
