@@ -9,7 +9,7 @@ const order = (props) => {
     );
   }
 
-  const ingredientsOuput = ingredients.map(ingredient => {
+  const ingredientsOuput = ingredients.filter((ing) => ing.amount > 0).map(ingredient => {
     return  <span key={ingredient.name} 
                   style={{
                     textTransform: 'capitalize', 
