@@ -33,6 +33,5 @@ describe('<BuildControls />', () => {
     it('renders correctly', () => {
         expect(wrapper).toMatchSnapshot();
     });
-
     
 });

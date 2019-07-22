@@ -1,7 +1,7 @@
 import React from 'react';
 import Burger from './Burger';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
-import { configure, shallow, mount } from 'enzyme';
+import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({ adapter: new Adapter() });
@@ -24,4 +24,5 @@ describe('<Burger />', () => {
         wrapper.setProps({ ingredients: [] });
         expect(wrapper.find(BurgerIngredient)).toHaveLength(2);
     });
+
 });
