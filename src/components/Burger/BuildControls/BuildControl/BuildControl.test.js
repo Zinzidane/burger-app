@@ -1,12 +1,12 @@
 import React from 'react';
-import App from './App';
+import BuildControl from './BuildControl';
 import { configure, shallow, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 configure({ adapter: new Adapter() });
 
-const app = shallow(<App />);
+const buildControl = shallow(<BuildControl />);
 
 it('renders correctly', () => {
-  expect(app).toMatchSnapshot();
+  expect(buildControl).toMatchSnapshot();
 });

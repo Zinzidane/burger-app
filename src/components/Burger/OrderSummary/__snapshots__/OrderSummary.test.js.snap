@@ -1,0 +1,334 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<OrderSummary /> renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <orderSummary
+    ingredients={Array []}
+    price={0}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <h3>
+          Your Order
+</h3>,
+        <p>
+          A delicious burger with the following ingredients:
+</p>,
+        <ul>
+          
+</ul>,
+        <p>
+          <strong>
+                    Total Price: 
+                    0.00
+          </strong>
+</p>,
+        <p>
+          Continue to Checkout?
+</p>,
+        <button
+          btnType="Danger"
+          clicked={undefined}
+>
+          CANCEL
+</button>,
+        <button
+          btnType="Success"
+          clicked={undefined}
+>
+          CONTINUE
+</button>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Your Order",
+        },
+        "ref": null,
+        "rendered": "Your Order",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "A delicious burger with the following ingredients:",
+        },
+        "ref": null,
+        "rendered": "A delicious burger with the following ingredients:",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [],
+        },
+        "ref": null,
+        "rendered": Array [],
+        "type": "ul",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <strong>
+            Total Price: 
+            0.00
+</strong>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Total Price: ",
+              "0.00",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Total Price: ",
+            "0.00",
+          ],
+          "type": "strong",
+        },
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Continue to Checkout?",
+        },
+        "ref": null,
+        "rendered": "Continue to Checkout?",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "btnType": "Danger",
+          "children": "CANCEL",
+          "clicked": undefined,
+        },
+        "ref": null,
+        "rendered": "CANCEL",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "btnType": "Success",
+          "children": "CONTINUE",
+          "clicked": undefined,
+        },
+        "ref": null,
+        "rendered": "CONTINUE",
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <h3>
+            Your Order
+</h3>,
+          <p>
+            A delicious burger with the following ingredients:
+</p>,
+          <ul>
+            
+</ul>,
+          <p>
+            <strong>
+                        Total Price: 
+                        0.00
+            </strong>
+</p>,
+          <p>
+            Continue to Checkout?
+</p>,
+          <button
+            btnType="Danger"
+            clicked={undefined}
+>
+            CANCEL
+</button>,
+          <button
+            btnType="Success"
+            clicked={undefined}
+>
+            CONTINUE
+</button>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Your Order",
+          },
+          "ref": null,
+          "rendered": "Your Order",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "A delicious burger with the following ingredients:",
+          },
+          "ref": null,
+          "rendered": "A delicious burger with the following ingredients:",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [],
+          },
+          "ref": null,
+          "rendered": Array [],
+          "type": "ul",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <strong>
+              Total Price: 
+              0.00
+</strong>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Total Price: ",
+                "0.00",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Total Price: ",
+              "0.00",
+            ],
+            "type": "strong",
+          },
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Continue to Checkout?",
+          },
+          "ref": null,
+          "rendered": "Continue to Checkout?",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "btnType": "Danger",
+            "children": "CANCEL",
+            "clicked": undefined,
+          },
+          "ref": null,
+          "rendered": "CANCEL",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "btnType": "Success",
+            "children": "CONTINUE",
+            "clicked": undefined,
+          },
+          "ref": null,
+          "rendered": "CONTINUE",
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+}
+`;
