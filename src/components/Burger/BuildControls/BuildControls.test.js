@@ -22,13 +22,18 @@ describe('<BuildControls />', () => {
         { label: 'Cheese', type: 'cheese' },
         { label: 'Meat', type: 'meat' },
       ];
-      wrapper = shallow(<BuildControls {...props}/>,   { context: { controls: controls } });
+      wrapper = shallow(<BuildControls {...props}/>);
       // wrapper.setContext(controls);
       console.log(wrapper);
     })
 
     it('renders correctly', () => {
         expect(wrapper).toMatchSnapshot();
+    });
+
+    it('should have the right context', () => {
+      wrapper.setContext({controls: 0});
+      expect(wrapper.context().controls).to.equal(0);
     });
     
 });
