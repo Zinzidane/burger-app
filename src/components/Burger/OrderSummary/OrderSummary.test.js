@@ -14,8 +14,6 @@ describe('<OrderSummary />', () => {
   };
   beforeEach(() => {
     wrapper = shallow(<OrderSummary {...props} />);
-    // wrapper.setContext(controls);
-    console.log(wrapper);
   })
 
   it('renders correctly', () => {

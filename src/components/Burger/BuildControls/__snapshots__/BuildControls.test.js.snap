@@ -1,3 +1,362 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<BuildControls /> renders correctly 1`] = `undefined`;
+exports[`<BuildControls /> renders correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <buildControls
+    disabled={
+        Object {
+            "bacon": false,
+            "cheese": false,
+            "meat": false,
+            "salad": false,
+          }
+    }
+    isAuth={false}
+    ordered={false}
+    price={0}
+    purchasable={false}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <p>
+          Current Price: 
+          <strong>
+                    0.00
+          </strong>
+</p>,
+        Array [
+          <buildControl
+            added={[Function]}
+            disabled={false}
+            label="Salad"
+            removed={[Function]}
+/>,
+          <buildControl
+            added={[Function]}
+            disabled={false}
+            label="Bacon"
+            removed={[Function]}
+/>,
+          <buildControl
+            added={[Function]}
+            disabled={false}
+            label="Cheese"
+            removed={[Function]}
+/>,
+          <buildControl
+            added={[Function]}
+            disabled={false}
+            label="Meat"
+            removed={[Function]}
+/>,
+        ],
+        <button
+          className={undefined}
+          disabled={true}
+          onClick={false}
+>
+          SIGN UP TO ORDER
+</button>,
+      ],
+      "className": undefined,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Current Price: ",
+            <strong>
+              0.00
+</strong>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Current Price: ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "0.00",
+            },
+            "ref": null,
+            "rendered": "0.00",
+            "type": "strong",
+          },
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": "Salad",
+        "nodeType": "function",
+        "props": Object {
+          "added": [Function],
+          "disabled": false,
+          "label": "Salad",
+          "removed": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Bacon",
+        "nodeType": "function",
+        "props": Object {
+          "added": [Function],
+          "disabled": false,
+          "label": "Bacon",
+          "removed": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Cheese",
+        "nodeType": "function",
+        "props": Object {
+          "added": [Function],
+          "disabled": false,
+          "label": "Cheese",
+          "removed": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "Meat",
+        "nodeType": "function",
+        "props": Object {
+          "added": [Function],
+          "disabled": false,
+          "label": "Meat",
+          "removed": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "SIGN UP TO ORDER",
+          "className": undefined,
+          "disabled": true,
+          "onClick": false,
+        },
+        "ref": null,
+        "rendered": "SIGN UP TO ORDER",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p>
+            Current Price: 
+            <strong>
+                        0.00
+            </strong>
+</p>,
+          Array [
+            <buildControl
+              added={[Function]}
+              disabled={false}
+              label="Salad"
+              removed={[Function]}
+/>,
+            <buildControl
+              added={[Function]}
+              disabled={false}
+              label="Bacon"
+              removed={[Function]}
+/>,
+            <buildControl
+              added={[Function]}
+              disabled={false}
+              label="Cheese"
+              removed={[Function]}
+/>,
+            <buildControl
+              added={[Function]}
+              disabled={false}
+              label="Meat"
+              removed={[Function]}
+/>,
+          ],
+          <button
+            className={undefined}
+            disabled={true}
+            onClick={false}
+>
+            SIGN UP TO ORDER
+</button>,
+        ],
+        "className": undefined,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Current Price: ",
+              <strong>
+                0.00
+</strong>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Current Price: ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "0.00",
+              },
+              "ref": null,
+              "rendered": "0.00",
+              "type": "strong",
+            },
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": "Salad",
+          "nodeType": "function",
+          "props": Object {
+            "added": [Function],
+            "disabled": false,
+            "label": "Salad",
+            "removed": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Bacon",
+          "nodeType": "function",
+          "props": Object {
+            "added": [Function],
+            "disabled": false,
+            "label": "Bacon",
+            "removed": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Cheese",
+          "nodeType": "function",
+          "props": Object {
+            "added": [Function],
+            "disabled": false,
+            "label": "Cheese",
+            "removed": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "Meat",
+          "nodeType": "function",
+          "props": Object {
+            "added": [Function],
+            "disabled": false,
+            "label": "Meat",
+            "removed": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "SIGN UP TO ORDER",
+            "className": undefined,
+            "disabled": true,
+            "onClick": false,
+          },
+          "ref": null,
+          "rendered": "SIGN UP TO ORDER",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    Symbol(enzyme.__providerValues__): undefined,
+  },
+  Symbol(enzyme.__providerValues__): Map {},
+}
+`;

@@ -21,12 +21,7 @@ describe('<Burger />', () => {
     });
     
     it('should render two <BurgerIngredient /> elements if no ingredients added', () => {
-        // wrapper.setProps({ ingredients: [] });
-        // expect(wrapper.find(BurgerIngredient)).toHaveLength(2);
-        // let burgerIngredient = <BurgerIngredient type="bread-bottom" />
-
-        console.log(wrapper, wrapper.find(BurgerIngredient));
+        wrapper.setProps({ ingredients: [] });
         expect(wrapper.find(BurgerIngredient)).toHaveLength(2);
-        // expect(wrapper.find(BurgerIngredient)).to.have.lengthOf(3);
     });
 });
