@@ -1,5 +1,5 @@
 import React from 'react';
-import Logout from './Logout';
+import Checkout from './Checkout';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { configure, shallow } from 'enzyme';
@@ -8,10 +8,14 @@ import configureStore from 'redux-mock-store';
 
 configure({ adapter: new Adapter() });
 
-describe('<Logout />', () => {
+describe('<Checkout />', () => {
     const mockStore = configureStore([thunk]);
-    const initialState = {}; 
-    const mockLogoutfn = jest.fn();
+    const initialState = {
+        ings: [],
+        purchased: false
+    }; 
+
+
     let wrapper;
     let store;
 
@@ -20,7 +24,11 @@ describe('<Logout />', () => {
         store = mockStore(initialState);
 
         wrapper = shallow(
-            <Provider store={store}><Logout onLogout={mockLogoutfn} /></Provider> 
+            <Provider store={store}>
+                <Checkout 
+                    {...initialState}
+                />
+            </Provider> 
         );
     });
 
@@ -28,9 +36,8 @@ describe('<Logout />', () => {
         expect(wrapper).toMatchSnapshot();
     });
     
-    it('should call logout action', () => {
-        mockLogoutfn.call();
-        expect(mockLogoutfn.mock.calls.length).toBe(1)
+    it('should have correct props', () => {
+        expect(wrapper.props()).toEqual(initialState);
     });
 
 });
