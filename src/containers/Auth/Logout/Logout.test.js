@@ -1,5 +1,5 @@
 import React from 'react';
-import Auth from './Auth';
+import Logout from './Logout';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { configure, shallow } from 'enzyme';
@@ -8,15 +8,10 @@ import configureStore from 'redux-mock-store';
 
 configure({ adapter: new Adapter() });
 
-describe('<Auth />', () => {
+describe('<Logout />', () => {
     const mockStore = configureStore([thunk]);
-    const initialState = {
-        loading: false,
-        error: null,
-        isAuthenticated: false,
-        buildingBurger: false,
-        authRedirectPath: '/'
-    }; 
+    const initialState = {}; 
+    const mockLogoutfn = jest.fn();
     let wrapper;
     let store;
 
@@ -25,7 +20,7 @@ describe('<Auth />', () => {
         store = mockStore(initialState);
 
         wrapper = shallow(
-            <Provider store={store}><Auth {...initialState} /></Provider> 
+            <Provider store={store}><Logout onLogout={mockLogoutfn} /></Provider> 
         );
     });
 
@@ -34,7 +29,8 @@ describe('<Auth />', () => {
     });
     
     it('should have correct props', () => {
-        expect(wrapper.props()).toEqual(initialState);
+        mockLogoutfn.call();
+        expect(mockLogoutfn.mock.calls.length).toBe(1)
     });
 
 });
